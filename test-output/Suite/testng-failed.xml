@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="TestChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.selenium.LaunchFirefoxAndChromeTogether">
+        <methods>
+          <include name="loginFFandCHROME" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.selenium.LaunchFirefoxAndChromeTogether -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+  <test thread-count="5" parallel="tests" name="TestFirefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.selenium.LaunchFirefoxAndChromeTogether">
+        <methods>
+          <include name="loginFFandCHROME" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.selenium.LaunchFirefoxAndChromeTogether -->
+    </classes>
+  </test> <!-- TestFirefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
